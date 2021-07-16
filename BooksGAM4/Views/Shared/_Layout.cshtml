@@ -1,75 +1,92 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BooksGAM4</title>
-
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <title>@ViewData["Title"] - BooksGroupAM4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/pricing.css" />
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">BooksGAM4</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                <partial name="_LoginPartial" />
-            </div>
-        </div>
-    </nav>
 
-    <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2021 - BooksGAM4</p>
-        </footer>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Books Group AM4</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Features</a>
+            <a class="p-2 text-dark" href="#">Premium</a>
+            <a class="p-2 text-dark" href="#">Suporte</a>
+            <a class="p-2 text-dark" href="#">Preços</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Cadastro</a>
+    </div>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Preços</h1>
+        <p class="lead">Construa uma tabela de preços para seus potenciais clientes, com esse exemplo Bootstrap. Além do mais, é feito com componentes padrões, utilitários e um pouquinho de customização.</p>
     </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+    <div class="container">
 
-    @RenderSection("Scripts", required: false)
+        @RenderBody()
+
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Algo legal</a></li>
+                        <li><a class="text-muted" href="#">Feature aleatória</a></li>
+                        <li><a class="text-muted" href="#">Recursos para times</a></li>
+                        <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
+                        <li><a class="text-muted" href="#">Outra coisa legal</a></li>
+                        <li><a class="text-muted" href="#">Último item</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Fontes</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Fonte</a></li>
+                        <li><a class="text-muted" href="#">Nome da fonte</a></li>
+                        <li><a class="text-muted" href="#">Outra fonte</a></li>
+                        <li><a class="text-muted" href="#">Fonte final</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Sobre</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Equipe</a></li>
+                        <li><a class="text-muted" href="#">Locais</a></li>
+                        <li><a class="text-muted" href="#">Privacidade</a></li>
+                        <li><a class="text-muted" href="#">Termos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+    <!--.-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
