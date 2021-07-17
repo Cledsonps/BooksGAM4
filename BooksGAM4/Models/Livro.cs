@@ -22,9 +22,9 @@ namespace BooksGAM4.Models
         [DisplayName("Imagem")]
         public string ImagemCapaUrl { get; set; }
 
-        [StringLength(13)]
+        [Column(TypeName = "varchar(13)")]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
-        public int ISBN { get; set; }
+        public string ISBN { get; set; }
 
         [StringLength(100)]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
@@ -34,7 +34,7 @@ namespace BooksGAM4.Models
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
         public string Autor { get; set; }
 
-        [StringLength(300)]
+        [StringLength(2000)]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
         public string Sinopse { get; set; }
 

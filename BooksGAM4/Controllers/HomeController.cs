@@ -1,4 +1,6 @@
-﻿using BooksGAM4.Models;
+﻿using BooksGAM4.Data;
+using BooksGAM4.Data.DAL;
+using BooksGAM4.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,9 +12,17 @@ namespace BooksGAM4.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var listaLivros = LivroDAL.ListaLivro(_context);
+            ViewBag.listaLivros = listaLivros;
+            return View(ViewBag.listaLivros);
         }
 
         public IActionResult About()

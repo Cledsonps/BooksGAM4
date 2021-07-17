@@ -18,10 +18,7 @@ C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.TagHelpers.input.ca
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.TagHelpers.output.cache
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.RazorCoreGenerate.cache
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
-C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
