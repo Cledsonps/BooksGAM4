@@ -33,3 +33,9 @@ C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.dll
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.pdb
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.genruntimeconfig.cache
 C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\BooksGAM4.csproj.CopyComplete
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Livros\Create.cshtml.g.cs
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Livros\Delete.cshtml.g.cs
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Livros\Details.cshtml.g.cs
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Livros\Edit.cshtml.g.cs
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Livros\Index.cshtml.g.cs
+C:\GIT\BooksGAM4\BooksGAM4\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutLivro.cshtml.g.cs

@@ -18,7 +18,6 @@ namespace BooksGAM4.Models
         public string Titulo { get; set; }
 
         [StringLength(200)]
-        [Required(ErrorMessage = "Este campo é de preenchimento obrigatório.")]
         [DisplayName("Imagem")]
         public string ImagemCapaUrl { get; set; }
 

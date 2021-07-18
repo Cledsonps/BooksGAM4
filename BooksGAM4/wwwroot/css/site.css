@@ -1,6 +1,33 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+a[href="#top"] {
+    padding: 10px;
+    position: fixed;
+    top: 90%;
+    right: 40px;
+    display: none;
+    font-size: 30px;
+}
+
+a[href="#top"]:hover {
+    text-decoration: none;
+}
+
+.ellipsis {
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipsisAutor {
+    max-width: 20ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;

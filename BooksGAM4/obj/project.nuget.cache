@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N0T4cf++6C3yMswa5KCGnqJmY9jTFZxZhA8eoG1jUWKoLshKwTdOZ9CufL1cyW3qRAXNPxw/nk/f6O4zt97E3w==",
+  "dgSpecHash": "b53ukdNJk0BacQnw8xR/Xp5qnBrw9RAElhFypJNKdAtBGzIaUlzmDtITZLSQg5E6CVEEfDLvGk6TuF+Fu4/G8Q==",
   "success": true,
   "projectFilePath": "C:\\GIT\\BooksGAM4\\BooksGAM4\\BooksGAM4.csproj",
   "expectedPackageFiles": [
@@ -112,7 +112,7 @@
     "C:\\Users\\Cledson PS\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.1.14\\microsoft.entityframeworkcore.design.2.1.14.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.inmemory\\2.1.1\\microsoft.entityframeworkcore.inmemory.2.1.1.nupkg.sha512",
     "C:\\Users\\Cledson PS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.1.14\\microsoft.entityframeworkcore.relational.2.1.14.nupkg.sha512",
-    "C:\\Users\\Cledson PS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.1\\microsoft.entityframeworkcore.sqlserver.2.1.1.nupkg.sha512",
+    "C:\\Users\\Cledson PS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.14\\microsoft.entityframeworkcore.sqlserver.2.1.14.nupkg.sha512",
     "C:\\Users\\Cledson PS\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\2.1.14\\microsoft.entityframeworkcore.tools.2.1.14.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.abstractions\\2.1.1\\microsoft.extensions.caching.abstractions.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.memory\\2.1.1\\microsoft.extensions.caching.memory.2.1.1.nupkg.sha512",

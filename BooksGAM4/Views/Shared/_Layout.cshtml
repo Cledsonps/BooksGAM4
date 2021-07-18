@@ -12,32 +12,31 @@
 
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">Books Group AM4</h5>
+        <h5 class="my-0 mr-md-auto font-weight-normal">
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Books Group AM4</a>
+        </h5>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#">Features</a>
-            <a class="p-2 text-dark" href="#">Premium</a>
-            <a class="p-2 text-dark" href="#">Suporte</a>
-            <a class="p-2 text-dark" href="#">Preços</a>
+            <a class="p-2 text-dark" asp-area="" asp-controller="Livros" asp-action="Index">Gestão dos livros</a>
+            <a class="p-2 text-dark" href="#">Usuário</a>
+            <a class="p-2 text-dark" href="#">Admin</a>
+            <a class="p-2 text-dark" href="#">Sobre</a>
         </nav>
         <a class="btn btn-outline-primary" href="#">Cadastro</a>
-    </div>
-    
-    <div class="pricing-header px-3 py-3 pt-1 md-4 pb-1 md-4 mx-auto text-center">
-        <h2 class="display-4">Promoção</h2>
-        <p class="lead">
-            Os melhores títulos em promoção especial. Aproveite !
-        </p>
     </div>
 
     <div class="container">
 
         @RenderBody()
 
+        <a href="#top" class="glyphicon glyphicon-chevron-up" title="Volta ao topo">
+            <img src="~/images/icons/arrow-up-circle-fill.svg" style="width:40px; height:40px; margin-bottom:100px" />            
+        </a>
+
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <div class="col-12 col-md">
-                    <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                    Books Group AM4
+                    <small class="d-block mb-3 text-muted">&copy; 2021 - version.01</small>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Features</h5>
@@ -89,6 +88,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("styles", required: false)
 
 </body>
 </html>
