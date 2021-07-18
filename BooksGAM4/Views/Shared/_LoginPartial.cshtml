@@ -1,25 +1,25 @@
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 @inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            </li>
-            <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
-            </li>
-        </ul>
+
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" asp-area="" asp-controller="Livros" asp-action="Index">Gest&atilde;o dos livros</a>
+        <a class="p-2 text-dark" href="#">Usu&aacute;rio</a>
+        <a class="p-2 text-dark" href="#">Admin</a>
+        <a class="p-2 text-dark" href="#">Sobre</a>
+    </nav>
+
+    <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post">
+        <span class="mr-3 text-success h6">Ol&aacute; @User.Identity.Name</span>
+        <a class="pl-1 pr-1 text-dark btn btn-sm btn-outline-warning" href="javascript:document.getElementById('logoutForm').submit()" style="color:white">Log off</a>
     </form>
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
-        <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
-    </ul>
+    <a class="btn btn-sm btn-outline-success" asp-controller="Account" asp-action="Login">Log in</a>
+    <a class="btn btn-sm btn-outline-info ml-1" asp-controller="Account" asp-action="Register">Registro</a>
 }

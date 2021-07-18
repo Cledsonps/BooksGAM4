@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Hosting;
 using BooksGAM4.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BooksGAM4.Controllers
 {
+    [Authorize]
     public class LivrosController : Controller
     {
         IHostingEnvironment _appEnvironment;
@@ -52,14 +54,11 @@ namespace BooksGAM4.Controllers
             return View();
         }
 
-        // POST: Livros/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Titulo,ImagemCapaUrl,ISBN,Editora,Autor,Sinopse,DataPublicacao,Preco")] Livro livro, List<IFormFile> arquivos)
         {
-
+            //-- Upload do Arquivo
             livro.ImagemCapaUrl = await LivroServices.EnviarArquivo(arquivos, _context, _appEnvironment);
 
             //--- Grava dados
@@ -109,8 +108,6 @@ namespace BooksGAM4.Controllers
         }
 
         // POST: Livros/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Titulo,ImagemCapaUrl,ISBN,Editora,Autor,Sinopse,DataPublicacao,Preco")] Livro livro)
@@ -144,6 +141,7 @@ namespace BooksGAM4.Controllers
         }
 
         // GET: Livros/Delete/5
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

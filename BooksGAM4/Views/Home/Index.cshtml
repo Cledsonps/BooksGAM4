@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="pricing-header px-3 py-3 pt-1 md-4 pb-1 md-4 mx-auto text-center">
+<div class="pricing-header pt-3 pb-2 md-4 mx-auto text-center">
     @*<h2 class="display-4">Promoção</h2>*@
     <p class="lead">
         Os melhores títulos em promoção especial. Aproveite !
@@ -13,34 +13,53 @@
 
 <div class="card-deck mb-3 text-center">
 
-    @{
-        int i = 0;
-        foreach (var item in Model.ToList())
+    @using Microsoft.AspNetCore.Identity
+    @using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+    @inject SignInManager<IdentityUser> SignInManager
+
+    @{ if (SignInManager.IsSignedIn(User))
         {
-            if (i < 3)
+            int i = 0;
+            foreach (var item in Model.ToList())
             {
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <a class="btn btn-info" asp-controller="Livros" asp-action="Details" asp-route-id="@item.Id">
-                            <img src="@item.ImagemCapaUrl" class="rounded float-start"
-                                 style="width: 217px; height: 300px;" title="Clique para mais detalhes" />
-                        </a>                                
+                if (i < 3)
+                {
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <a class="btn btn-info" asp-controller="Livros" asp-action="Details" asp-route-id="@item.Id">
+                                <img src="@item.ImagemCapaUrl" class="rounded float-start"
+                                     style="width: 217px; height: 300px;" title="Clique para mais detalhes" />
+                            </a>
+                        </div>
+                        <div class="card-body" align="center">
+                            <h1 class="card-title pricing-card-title"><small class="text-muted"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="ellipsis">@item.Titulo</li>
+                                <li>@item.Preco.ToString("C")</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <a type="button" class="btn btn-lg btn-block btn-outline-info"
+                               asp-controller="Livros" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title"><small class="text-muted"></small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li class="ellipsis">@item.Titulo</li>
-                            <li>R$ @item.Preco</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Detalhes</button>
-                    </div>
-                </div>
+                }
+                i++;
             }
-            i++;
+
+        }
+        else
+        {
+            <div class="pricing-header px-3 py-3 pt-5 pb-5 md-4 mx-auto text-center">
+                <p class="h1 text-primary">
+                    Books Group AM4
+                </p>
+                <span>Faça login para acessar a plataforma</span>
+            </div>
         }
     }
+
 
 
 </div>

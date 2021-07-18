@@ -23,8 +23,13 @@ using BooksGAM4.Models;
 
 #line default
 #line hidden
+#line 3 "C:\GIT\BooksGAM4\BooksGAM4\Views\_ViewImports.cshtml"
+using BooksGAM4.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e61cb5695b413fec9202237f5123f8763088238", @"/Views/Shared/_LayoutLivro.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e6a4e5aa038a68326c278a8b583c6653b430cb6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a556a6194eacec4c467f3d9dd205bc1c0d122379", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LayoutLivro : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", new global::Microsoft.AspNetCore.Html.HtmlString("button"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -66,7 +71,7 @@ using BooksGAM4.Models;
             WriteLiteral("</h5>\r\n</div>\r\n<div class=\"py-3 md-4 pb-3 md-4 text-left\">\r\n    ");
             EndContext();
             BeginContext(117, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8149126dd71b4715bbf543231a9f2036", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fecfda17f8b94681b68348addbbad326", async() => {
                 BeginContext(186, 14, true);
                 WriteLiteral("Adicionar Novo");
                 EndContext();

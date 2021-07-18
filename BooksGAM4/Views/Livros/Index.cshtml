@@ -82,7 +82,7 @@
                     @item.DataPublicacao.ToString("dd/MM/yyyy")
                 </td>
                 <td>
-                    R$ @Html.DisplayFor(modelItem => item.Preco)
+                    @item.Preco.ToString("C")
                 </td>
                 <td>
                     <div class="btn-group">
