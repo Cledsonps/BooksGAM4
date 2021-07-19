@@ -13,6 +13,7 @@ namespace BooksGAM4.Data
         }
 
         public DbSet<Livro> Livros { get; set; }
+        public DbSet<Aspnetuser> aspnetusers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

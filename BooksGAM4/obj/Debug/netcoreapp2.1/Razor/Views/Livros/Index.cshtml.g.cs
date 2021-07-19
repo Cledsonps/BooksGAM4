@@ -226,7 +226,7 @@ WriteAttributeValue("", 2497, item.ImagemCapaUrl, 2497, 19, false);
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    <div class=\"btn-group\">\r\n                        ");
             EndContext();
             BeginContext(3129, 833, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d85d36c90866461e929b9f5da5b3d153", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c9f254a23df45fb8cb90366b5d37b89", async() => {
                 BeginContext(3215, 743, true);
                 WriteLiteral(@"
                             <svg xmlns=""~/images/icons/pencil-square.svg"" width=""16"" height=""16"" fill=""currentColor"" class=""bi bi-pencil-square"" viewBox=""0 0 16 16"">
@@ -268,7 +268,7 @@ WriteAttributeValue("", 2497, item.ImagemCapaUrl, 2497, 19, false);
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(3988, 787, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3ad3cf7e5a54b45acd75fe563bb6bd8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a75872cd3f1c46e688b3d89f7ffa8251", async() => {
                 BeginContext(4074, 697, true);
                 WriteLiteral(@"
                             <svg xmlns=""~/images/icons/card-text.svg"" width=""16"" height=""16"" fill=""currentColor"" class=""bi bi-pencil-square"" viewBox=""0 0 16 16"">
@@ -310,7 +310,7 @@ WriteAttributeValue("", 2497, item.ImagemCapaUrl, 2497, 19, false);
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(4801, 828, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd5deef92f004c2abbcc114d836441d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de85fd1078be4b7b9ffe275cfd67f348", async() => {
                 BeginContext(4887, 738, true);
                 WriteLiteral(@"
                             <svg xmlns=""~/images/icons/trash.svg"" width=""16"" height=""16"" fill=""currentColor"" class=""bi bi-pencil-square"" viewBox=""0 0 16 16"">

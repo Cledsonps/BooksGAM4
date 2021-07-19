@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="alert alert-info pt-2 mt-5" role="alert">
+        <center>
+            <img src="~/images/adminarea.svg" style="width: 70px; height: 70px" alt="Área de Administração" class="img-fluid" />
+            <p class="mb-0 h2">Esta é a área do Administrador</p>
+        </center>
+        <hr>
+        <p class="mb-0"></p>
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="~/images/adminuser.svg" style="width: 30px; height: 30px" alt="Admin Usuário" class="img-fluid mr-1" />
+                    <a class="p-2 text-dark" href="/Usuario">Admin Usuário</a>
+                </td>
+                <td>
+                    <img src="~/images/adminroles.svg" style="width: 30px; height: 30px " alt="Admin Grupo" class="img-fluid mr-1 ml-5" />
+                    <a href="/Usuario">Admin Grupo</a>
+                </td>
+                <td>
+                    <img src="~/images/adminlivro.svg" style="width: 30px; height: 30px " alt="Admin Livro" class="img-fluid mr-1 ml-5" />
+                    <a href="#">Admin Livro</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

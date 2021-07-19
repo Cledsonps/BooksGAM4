@@ -1,38 +1,46 @@
 ﻿@model LoginViewModel
-    <center>
-        <table>
-            <tr>
-                <td><img src="~/images/registro1.jpg" alt="Registrar Usuário" class="center-block img-fluid" /></td>
-                <td class="px-1"> </td>
-                <td>
-                    <div class="row loginForm">
-                        <div class="col-md-12">
-                            <h4>Registrar usuário</h4>
-                            <form asp-controller="Account" asp-action="Register" method="post" class="form-horizontal" role="form">
-                                <hr />
-                                <div class="form-group">
-                                    <label asp-for="UserName" class="col-md-2 control-label"></label>
-                                    <div class="col-md-12">
-                                        <input asp-for="UserName" class="form-control" />
-                                        <span asp-validation-for="UserName" class="text-danger"></span>
-                                    </div>
+<center>
+    <table>
+        <tr>
+            <td><img src="~/images/registro1.jpg" alt="Registrar Usuário" class="center-block img-fluid" /></td>
+            <td class="px-1"> </td>
+            <td>
+                <div class="row loginForm">
+                    <div class="col-md-12">
+                        <h4>Registrar usuário</h4>
+                        <form asp-controller="Account" asp-action="Register" method="post" class="form-horizontal" role="form">
+                            <hr />
+                            <div class="form-group">
+                                <label asp-for="UserName" class="col-md-2 control-label"></label>
+                                <div class="col-md-12">
+                                    <input asp-for="UserName" class="form-control" />
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
                                 </div>
-                                <div class="form-group">
-                                    <label asp-for="Password" class="col-md-2 control-label"></label>
-                                    <div class="col-md-12">
-                                        <input asp-for="Password" class="form-control" />
-                                        <span asp-validation-for="Password" class="text-danger"></span>
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password" class="col-md-2 control-label"></label>
+                                <div class="col-md-12">
+                                    <input asp-for="Password" class="form-control" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
                                 </div>
-                                <div class="form-group pull-right formPullRightButton">
-                                    <div class="col-md-offset-2 col-md-10">
-                                        <input type="submit" class="btn btn-success " value="Registrar" />
-                                    </div>
+                            </div>
+                            <div class="form-group pull-right formPullRightButton">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" class="btn btn-success " value="Registrar" />
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
-                </td>
-            </tr>
-        </table>
-    </center>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <span class="text-left h6"><br />Especificação de usuário e senha:<br /></span>
+    <ul class="text-left">
+        <li>Nome de Usuário não pode ter espaço.</li>
+        <li>Senha tem de ter 6 ou mais dígitos.</li>
+        <li>Precisa conter no mínimo 1 dígito de cada:</li>
+        <li class="ml-3">Letras minúsculas e maiúsculas, números e carectérie especial.</li>
+        <li class="ml-3">Exemplo: aB123#</li>
+    </ul>
+</center>

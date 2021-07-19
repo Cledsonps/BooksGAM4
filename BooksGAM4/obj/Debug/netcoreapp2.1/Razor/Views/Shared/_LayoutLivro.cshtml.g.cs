@@ -71,7 +71,7 @@ using BooksGAM4.ViewModels;
             WriteLiteral("</h5>\r\n</div>\r\n<div class=\"py-3 md-4 pb-3 md-4 text-left\">\r\n    ");
             EndContext();
             BeginContext(117, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fecfda17f8b94681b68348addbbad326", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7712478b89d7425cb33a88d3cec0dcb8", async() => {
                 BeginContext(186, 14, true);
                 WriteLiteral("Adicionar Novo");
                 EndContext();

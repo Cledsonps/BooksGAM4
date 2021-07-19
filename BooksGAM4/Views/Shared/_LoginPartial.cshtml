@@ -9,8 +9,7 @@
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" asp-area="" asp-controller="Livros" asp-action="Index">Gest&atilde;o dos livros</a>
         <a class="p-2 text-dark" href="#">Usu&aacute;rio</a>
-        <a class="p-2 text-dark" href="#">Admin</a>
-        <a class="p-2 text-dark" href="#">Sobre</a>
+        <a class="p-2 text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
     </nav>
 
     <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post">

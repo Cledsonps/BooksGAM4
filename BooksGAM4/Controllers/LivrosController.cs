@@ -141,22 +141,33 @@ namespace BooksGAM4.Controllers
         }
 
         // GET: Livros/Delete/5
-        [Authorize(Roles ="Admin")]
+        //[Authorize(Roles ="Administrador")]
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (User.IsInRole("Administrador"))
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
+                var livro = await _context.Livros
+                    .FirstOrDefaultAsync(m => m.Id == id);
+                if (livro == null)
+                {
+                    return NotFound();
+                }
 
-            var livro = await _context.Livros
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (livro == null)
+                return View(livro);
+            }
+            else
             {
-                return NotFound();
-            }
+                return RedirectToAction("AcessoNegado", "Livros");
+            }         
+        }
 
-            return View(livro);
+        public IActionResult AcessoNegado()
+        {
+            return View();
         }
 
         // POST: Livros/Delete/5

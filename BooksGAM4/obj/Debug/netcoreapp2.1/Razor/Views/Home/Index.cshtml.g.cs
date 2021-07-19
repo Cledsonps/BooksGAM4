@@ -108,7 +108,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
             WriteLiteral("                    <div class=\"card mb-4 shadow-sm\">\r\n                        <div class=\"card-header\">\r\n                            ");
             EndContext();
             BeginContext(834, 331, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4340778112094b318bc6fc9a974b80ec", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b7e8dd6828f44929265d4c3b1125e5c", async() => {
                 BeginContext(927, 38, true);
                 WriteLiteral("\r\n                                <img");
                 EndContext();
@@ -181,7 +181,7 @@ WriteAttributeValue("", 971, item.ImagemCapaUrl, 971, 19, false);
             WriteLiteral("</li>\r\n                                <li></li>\r\n                                <li></li>\r\n                            </ul>\r\n                            ");
             EndContext();
             BeginContext(1729, 176, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "996a56b64a6045c89c8cb7c8c63ba617", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "733fe34fc725481a95f45ce3281b24cb", async() => {
                 BeginContext(1893, 8, true);
                 WriteLiteral("Detalhes");
                 EndContext();
